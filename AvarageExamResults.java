@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class AvarageExamResults {
     public static void main(String[] args) {
-        // değişkenler
+       
         int maths;
         int phys;
         int turkish;
@@ -28,8 +28,7 @@ public class AvarageExamResults {
         double result = (maths + phys + turkish + history + music);
         double finalresult = result / 5;
         System.out.println(" Avarage Result : " + finalresult);
-        // buradaki + işareti sonrasında gelen result Int yada double bile olsa string
-        // gibi metne bağlar öyle cıktı verir
+      
         boolean passFailed = (finalresult >= 60);
         String strPassFailed = (passFailed) ? "Sinifi Gecti" : "Sinifta Kaldi";
         System.out.println(strPassFailed);
